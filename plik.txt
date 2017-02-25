@@ -8,6 +8,7 @@
  <body>
   <ol>
    <li>Pierwsza opcja</li>
+   <li>Pierwsza opcja</li>
   </ol>
  </body>
  
