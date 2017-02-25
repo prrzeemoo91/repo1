@@ -7,7 +7,7 @@
  
  <body>
   <ol>
-   <li>Pierwszy</li>
+   <li>Pierwsza opcja</li>
   </ol>
  </body>
  
