@@ -1,7 +1,14 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="pl">
+ 
  <head>
+  <title>REPOZYTORIUM</title>
  </head>
+ 
  <body>
+  <ol>
+   <li>Pierwszy</li>
+  </ol>
  </body>
+ 
 </html>
