@@ -1,3 +1,5 @@
+package komunikator;
+
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.io.IOException;

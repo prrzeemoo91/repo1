@@ -1,3 +1,6 @@
+package komunikator;
+
+import javax.swing.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
@@ -78,7 +81,7 @@ public class ChatClientThread implements Runnable {
 								name = data.get(s);
 								users.remove(data.get(s));
 								data.remove(s);
-								timer.reset();
+								input.reset();
 								
 								
 								for(int j=0;j<connected.size();j++)

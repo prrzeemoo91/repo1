@@ -1,3 +1,5 @@
+package komunikator;
+
 import java.util.ArrayList;
 
 import javax.swing.JOptionPane;

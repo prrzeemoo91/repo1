@@ -1,3 +1,5 @@
+package komunikator;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -9,7 +11,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 public class ChatServer implements Runnable {
 	
@@ -54,23 +56,23 @@ public class ChatServer implements Runnable {
 		System.out.println("Server has been started at host: " + host);
 		
 		while(true)
-		{				
+		{
 		try {
 			s = server.accept();
 			connected.add(s);
 			timer.reset();
-			
+
 			System.out.println("Client connected from: "+ s.getLocalAddress().getHostName());
-			
+
 			addUser(s);
-			
+
 			client = new ChatClientThread(s,connected,users,data,timer);
 			Thread clientT = new Thread(client);
 			clientT.start();
-			
+
 		} catch (IOException | ClassNotFoundException e) {
 			System.out.println("Server error - unable to connect to client.");
-		}	
+		}
 		}
 		
 		
